@@ -58,149 +58,93 @@
     padding: 20px 24px;
     margin-bottom: 32px;
   }
-
   .toc-title {
     font-family: 'Syne', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--accent2);
-    margin-bottom: 12px;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--accent2); margin-bottom: 12px;
   }
-
   .toc-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 4px 16px;
   }
-
   .toc-grid a {
     color: var(--muted);
     text-decoration: none;
     font-size: 13px;
     padding: 3px 0;
-    display: flex;
-    align-items: center;
-    gap: 7px;
+    display: flex; align-items: center; gap: 7px;
     transition: color 0.15s;
   }
-
   .toc-grid a:hover { color: var(--accent2); }
-
-  .toc-grid a::before {
-    content: '§';
-    color: var(--accent);
-    font-size: 11px;
-    opacity: 0.7;
-  }
+  .toc-grid a::before { content: '§'; color: var(--accent); font-size: 11px; opacity: 0.7; }
 
   /* ── Header ── */
-  .header {
-    text-align: center;
-    margin-bottom: 52px;
-  }
+  .header { text-align: center; margin-bottom: 52px; }
 
   .studio-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    display: inline-flex; align-items: center; gap: 8px;
     background: rgba(91,124,247,0.12);
     border: 1px solid var(--border);
-    border-radius: 999px;
-    padding: 6px 16px;
+    border-radius: 999px; padding: 6px 16px;
     font-family: 'Syne', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--accent2);
-    margin-bottom: 20px;
+    font-size: 12px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--accent2); margin-bottom: 20px;
   }
-
   .studio-badge::before { content: '🎮'; font-size: 14px; }
 
   h1 {
     font-family: 'Syne', sans-serif;
-    font-size: clamp(28px, 5vw, 44px);
-    font-weight: 800;
-    color: #fff;
-    letter-spacing: -0.02em;
-    line-height: 1.15;
-    margin-bottom: 14px;
+    font-size: clamp(26px, 5vw, 44px);
+    font-weight: 800; color: #fff;
+    letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 14px;
   }
-
   h1 span {
     background: linear-gradient(120deg, var(--accent), var(--accent2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-
-  .header-meta {
-    color: var(--muted);
-    font-size: 13.5px;
-  }
-
+  .header-meta { color: var(--muted); font-size: 13.5px; }
   .header-meta strong { color: var(--accent2); }
 
-  /* ── Notice banner ── */
+  /* ── Notice ── */
   .notice {
     background: rgba(245,200,66,0.07);
     border: 1px solid rgba(245,200,66,0.25);
     border-radius: var(--radius);
-    padding: 16px 20px;
-    margin-bottom: 36px;
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    font-size: 13.5px;
-    color: #f5e4a0;
-    line-height: 1.6;
+    padding: 16px 20px; margin-bottom: 36px;
+    display: flex; gap: 12px; align-items: flex-start;
+    font-size: 13.5px; color: #f5e4a0; line-height: 1.6;
   }
-
   .notice-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
 
-  /* ── Rating badge ── */
+  /* ── Badges ── */
   .rating-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 28px;
-    flex-wrap: wrap;
+    display: flex; align-items: center; justify-content: center;
+    gap: 10px; margin-bottom: 28px; flex-wrap: wrap;
   }
-
   .rating-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    display: inline-flex; align-items: center; gap: 8px;
     background: rgba(52,211,153,0.1);
     border: 1px solid rgba(52,211,153,0.3);
-    border-radius: 999px;
-    padding: 6px 16px;
+    border-radius: 999px; padding: 6px 16px;
     font-family: 'Syne', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    font-size: 12px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
     color: #6ee7b7;
   }
-
   .platform-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
+    display: inline-flex; align-items: center; gap: 6px;
     background: rgba(91,124,247,0.1);
     border: 1px solid var(--border);
-    border-radius: 999px;
-    padding: 6px 14px;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--accent2);
+    border-radius: 999px; padding: 6px 14px;
+    font-size: 12px; font-weight: 500; color: var(--accent2);
   }
 
-  /* ── Section cards ── */
+  /* ── Sections ── */
   .section {
     background: var(--card);
     border: 1px solid var(--border);
@@ -210,255 +154,166 @@
     transition: border-color 0.2s;
     scroll-margin-top: 24px;
   }
-
   .section:hover { border-color: rgba(91,124,247,0.35); }
-
-  .section-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 16px;
-  }
-
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
   .section-num {
     width: 28px; height: 28px;
     background: linear-gradient(135deg, var(--accent), #3a5bd4);
     border-radius: 8px;
     display: flex; align-items: center; justify-content: center;
     font-family: 'Syne', sans-serif;
-    font-size: 12px;
-    font-weight: 800;
-    color: #fff;
-    flex-shrink: 0;
+    font-size: 12px; font-weight: 800;
+    color: #fff; flex-shrink: 0;
   }
-
-  h2 {
-    font-family: 'Syne', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 0.01em;
-  }
-
+  h2 { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; color: #fff; letter-spacing: 0.01em; }
   p { color: var(--text); margin-bottom: 10px; }
   p:last-child { margin-bottom: 0; }
-
   h3 {
     font-family: 'Syne', sans-serif;
-    font-size: 13.5px;
-    font-weight: 700;
-    color: var(--accent2);
-    margin: 16px 0 6px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    font-size: 13.5px; font-weight: 700;
+    color: var(--accent2); margin: 16px 0 6px;
+    letter-spacing: 0.04em; text-transform: uppercase;
   }
 
   /* ── Bullet list ── */
-  .pp-list {
-    list-style: none;
-    margin-top: 6px;
-  }
-
+  .pp-list { list-style: none; margin-top: 6px; }
   .pp-list li {
     padding: 5px 0 5px 22px;
     position: relative;
-    font-size: 14px;
-    color: var(--text);
+    font-size: 14px; color: var(--text);
   }
-
   .pp-list li::before {
     content: '→';
     position: absolute; left: 0;
-    color: var(--accent);
-    font-size: 12px;
-    top: 7px;
+    color: var(--accent); font-size: 12px; top: 7px;
   }
 
-  /* ── Do/Don't grid ── */
+  /* ── Do/Don't ── */
   .rule-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    margin-top: 12px;
+    gap: 14px; margin-top: 12px;
   }
-
-  .rule-box {
-    border-radius: 10px;
-    padding: 14px 16px;
-  }
-
-  .rule-box.do {
-    background: rgba(52,211,153,0.07);
-    border: 1px solid rgba(52,211,153,0.2);
-  }
-
-  .rule-box.dont {
-    background: rgba(248,113,113,0.07);
-    border: 1px solid rgba(248,113,113,0.2);
-  }
-
+  .rule-box { border-radius: 10px; padding: 14px 16px; }
+  .rule-box.do { background: rgba(52,211,153,0.07); border: 1px solid rgba(52,211,153,0.2); }
+  .rule-box.dont { background: rgba(248,113,113,0.07); border: 1px solid rgba(248,113,113,0.2); }
   .rule-box-title {
     font-family: 'Syne', sans-serif;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+    font-size: 11px; font-weight: 800;
+    letter-spacing: 0.12em; text-transform: uppercase;
     margin-bottom: 10px;
   }
-
   .rule-box.do .rule-box-title { color: #6ee7b7; }
   .rule-box.dont .rule-box-title { color: #fca5a5; }
-
   .rule-box ul { list-style: none; }
-
   .rule-box ul li {
-    font-size: 13px;
-    padding: 3px 0 3px 18px;
-    position: relative;
-    color: var(--text);
+    font-size: 13px; padding: 3px 0 3px 18px;
+    position: relative; color: var(--text);
   }
+  .rule-box.do ul li::before { content: '✓'; position: absolute; left: 0; color: #6ee7b7; font-weight: 700; }
+  .rule-box.dont ul li::before { content: '✕'; position: absolute; left: 0; color: #fca5a5; font-weight: 700; }
 
-  .rule-box.do ul li::before {
-    content: '✓';
-    position: absolute; left: 0;
-    color: #6ee7b7;
-    font-weight: 700;
+  /* ── Table ── */
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 8px; }
+  .data-table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 460px; }
+  .data-table th {
+    background: rgba(91,124,247,0.1); color: var(--accent2);
+    font-family: 'Syne', sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 10px 14px; text-align: left;
+    border-bottom: 1px solid var(--border);
   }
+  .data-table td { padding: 11px 14px; border-bottom: 1px solid rgba(99,120,200,0.08); color: var(--text); vertical-align: top; }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table tr:hover td { background: rgba(91,124,247,0.04); }
 
-  .rule-box.dont ul li::before {
-    content: '✕';
-    position: absolute; left: 0;
-    color: #fca5a5;
-    font-weight: 700;
-  }
-
-  /* ── Coins info box ── */
+  /* ── Coin box ── */
   .coin-box {
     background: rgba(245,200,66,0.07);
     border: 1px solid rgba(245,200,66,0.2);
-    border-radius: 10px;
-    padding: 16px 18px;
-    margin-top: 12px;
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    font-size: 13.5px;
-    color: #f5e4a0;
+    border-radius: 10px; padding: 16px 18px;
+    margin-top: 12px; display: flex; gap: 12px;
+    align-items: flex-start; font-size: 13.5px; color: #f5e4a0;
   }
-
   .coin-box-icon { font-size: 20px; flex-shrink: 0; }
-
-  /* ── Tag ── */
-  .tag {
-    display: inline-block;
-    background: rgba(91,124,247,0.15);
-    color: var(--accent2);
-    border-radius: 4px;
-    padding: 1px 7px;
-    font-size: 11.5px;
-    font-weight: 500;
-    white-space: nowrap;
-  }
 
   /* ── Policy link card ── */
   .policy-link-card {
-    display: flex;
-    align-items: center;
-    gap: 14px;
+    display: flex; align-items: center; gap: 14px;
     background: rgba(91,124,247,0.07);
     border: 1px solid rgba(91,124,247,0.25);
-    border-radius: 10px;
-    padding: 14px 18px;
-    margin-top: 12px;
-    text-decoration: none;
+    border-radius: 10px; padding: 14px 18px;
+    margin-top: 12px; text-decoration: none;
     transition: border-color 0.2s, background 0.2s;
   }
-
-  .policy-link-card:hover {
-    border-color: rgba(91,124,247,0.5);
-    background: rgba(91,124,247,0.12);
-  }
-
+  .policy-link-card:hover { border-color: rgba(91,124,247,0.5); background: rgba(91,124,247,0.12); }
   .policy-link-card-icon { font-size: 22px; flex-shrink: 0; }
-
-  .policy-link-card-text .label {
-    font-family: 'Syne', sans-serif;
-    font-size: 13.5px;
-    font-weight: 700;
-    color: #fff;
-  }
-
-  .policy-link-card-text .sub {
-    font-size: 12.5px;
-    color: var(--muted);
-  }
+  .policy-link-card-text .label { font-family: 'Syne', sans-serif; font-size: 13.5px; font-weight: 700; color: #fff; }
+  .policy-link-card-text .sub { font-size: 12.5px; color: var(--muted); }
 
   /* ── Contact card ── */
   .contact-card {
     background: linear-gradient(135deg, rgba(91,124,247,0.12), rgba(91,124,247,0.04));
     border: 1px solid rgba(91,124,247,0.3);
-    border-radius: var(--radius);
-    padding: 24px 28px;
-    margin-top: 24px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
+    border-radius: var(--radius); padding: 24px 28px;
+    margin-top: 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
   }
-
   .contact-icon { font-size: 28px; flex-shrink: 0; }
-
-  .contact-text h3 {
-    font-family: 'Syne', sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 4px;
-    text-transform: none;
-    letter-spacing: 0;
-  }
-
-  .contact-text p {
-    font-size: 13.5px;
-    color: var(--muted);
-    margin: 0;
-  }
-
-  .contact-text a {
-    color: var(--accent2);
-    text-decoration: none;
-    font-weight: 500;
-  }
-
+  .contact-text h3 { font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 4px; text-transform: none; letter-spacing: 0; }
+  .contact-text p { font-size: 13.5px; color: var(--muted); margin: 0; }
+  .contact-text a { color: var(--accent2); text-decoration: none; font-weight: 500; }
   .contact-text a:hover { text-decoration: underline; }
 
   /* ── Footer ── */
   .footer {
-    margin-top: 48px;
-    padding-top: 28px;
+    margin-top: 48px; padding-top: 28px;
     border-top: 1px solid var(--border);
-    text-align: center;
-    color: var(--muted);
-    font-size: 12.5px;
-    line-height: 1.8;
+    text-align: center; color: var(--muted);
+    font-size: 12.5px; line-height: 1.8;
   }
-
   .footer strong { color: var(--accent2); }
-
-  /* ── Inline link ── */
-  a.inline-link {
-    color: var(--accent2);
-    text-decoration: none;
-    font-weight: 500;
-  }
-
+  a.inline-link { color: var(--accent2); text-decoration: none; font-weight: 500; }
   a.inline-link:hover { text-decoration: underline; }
 
-  @media (max-width: 600px) {
-    .wrapper { padding: 32px 16px 60px; }
-    .section { padding: 20px 18px; }
+  /* ── Mobile / Tablet ── */
+  /* ── Mobile (≤640px) ── */
+  @media (max-width: 640px) {
+    .wrapper { padding: 24px 14px 56px; }
+    .section { padding: 16px 14px 14px; margin-bottom: 14px; scroll-margin-top: 16px; }
+    .section-header { gap: 8px; margin-bottom: 12px; }
+    .header { margin-bottom: 28px; }
+    .studio-badge { font-size: 11px; padding: 5px 12px; }
+    h1 { font-size: clamp(22px, 8vw, 30px); }
+    h2 { font-size: 14px; }
+    h3 { font-size: 12.5px; margin: 12px 0 5px; }
+    p, .pp-list li { font-size: 13.5px; }
+    .notice { padding: 13px 14px; font-size: 13px; gap: 10px; }
+    .rating-row { gap: 6px; }
+    .rating-badge, .platform-badge { font-size: 11px; padding: 5px 10px; }
     .rule-grid { grid-template-columns: 1fr; }
+    .rule-box { padding: 12px 14px; }
+    .rule-box ul li { font-size: 12.5px; }
     .toc-grid { grid-template-columns: 1fr; }
+    .toc-grid a { font-size: 12.5px; }
+    /* Currency table on mobile */
+    .data-table { font-size: 13px; }
+    .data-table th { font-size: 10px; padding: 8px 9px; }
+    .data-table td { font-size: 12.5px; padding: 9px 9px; }
+    .coin-box { padding: 12px 14px; font-size: 13px; }
+    .policy-link-card { padding: 12px 14px; gap: 10px; }
+    .policy-link-card-text .label { font-size: 12.5px; }
+    .policy-link-card-text .sub { font-size: 11.5px; word-break: break-all; }
+    .contact-card { flex-direction: column; padding: 16px 14px; gap: 10px; }
+    .pp-list li { padding-left: 18px; }
+    .tag { font-size: 11px; }
+  }
+
+  /* ── Tablet (641–1024px) ── */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .wrapper { padding: 36px 24px 68px; }
+    .section { padding: 22px 20px; }
+    .toc-grid { grid-template-columns: repeat(2, 1fr); }
+    h1 { font-size: clamp(26px, 4vw, 36px); }
   }
 </style>
 </head>
@@ -469,9 +324,10 @@
   <header class="header">
     <div class="studio-badge">FunMindo Studio</div>
     <h1>Terms of Use<br/><span>Stack It!</span></h1>
+    <!-- FIX 4: Date aligned to April 25 to match all other documents -->
     <p class="header-meta">
-      Effective Date: <strong>April 23, 2026</strong> &nbsp;·&nbsp;
-      Last Updated: <strong>April 23, 2026</strong> &nbsp;·&nbsp;
+      Effective Date: <strong>April 25, 2026</strong> &nbsp;·&nbsp;
+      Last Updated: <strong>April 25, 2026</strong> &nbsp;·&nbsp;
       Jurisdiction: <strong>India</strong>
     </p>
   </header>
@@ -484,7 +340,7 @@
     <span class="platform-badge">🪙💎👑 Coins · Diamonds · Crowns</span>
   </div>
 
-  <!-- ── Intro notice ── -->
+  <!-- ── Intro ── -->
   <div class="notice">
     <span class="notice-icon">📋</span>
     <span>
@@ -502,7 +358,7 @@
       <a href="#s2">2. About the Game</a>
       <a href="#s3">3. Licence to Use</a>
       <a href="#s4">4. User Conduct</a>
-      <a href="#s5">5. In-Game Coins &amp; Virtual Items</a>
+      <a href="#s5">5. In-Game Currencies &amp; Virtual Items</a>
       <a href="#s6">6. Leaderboard &amp; Display Name</a>
       <a href="#s7">7. Advertisements</a>
       <a href="#s8">8. Intellectual Property</a>
@@ -516,24 +372,18 @@
     </div>
   </div>
 
-  <!-- 1. Acceptance -->
+  <!-- 1 -->
   <div class="section" id="s1">
-    <div class="section-header">
-      <div class="section-num">1</div>
-      <h2>Acceptance of Terms</h2>
-    </div>
+    <div class="section-header"><div class="section-num">1</div><h2>Acceptance of Terms</h2></div>
     <p>These Terms of Use ("Terms") constitute a legally binding agreement between you ("Player", "you", "your") and <strong>FunMindo</strong> ("FunMindo", "we", "us", "our"), governing your use of the mobile game <strong>Stack It!</strong> ("Game") and any related services.</p>
     <p>By downloading, installing, accessing, or playing the Game, you confirm that you have read, understood, and agree to be bound by these Terms and our Privacy Policy.</p>
     <p><strong>If you are under 13 years of age</strong>, your parent or legal guardian must read, understand, and agree to these Terms on your behalf before you use the Game. If you are between 13 and 18 years of age, you represent that your parent or legal guardian has reviewed and agreed to these Terms.</p>
     <p>FunMindo reserves the right to update these Terms at any time. Continued use of the Game after any update constitutes acceptance of the revised Terms.</p>
   </div>
 
-  <!-- 2. About the Game -->
+  <!-- 2 -->
   <div class="section" id="s2">
-    <div class="section-header">
-      <div class="section-num">2</div>
-      <h2>About the Game</h2>
-    </div>
+    <div class="section-header"><div class="section-num">2</div><h2>About the Game</h2></div>
     <p><strong>Stack It!</strong> is a casual mobile game developed and published by <strong>FunMindo</strong>, available for free on the Google Play Store for Android devices. The Game features:</p>
     <ul class="pp-list">
       <li>Casual stacking gameplay suitable for players aged 3 and above</li>
@@ -542,15 +392,12 @@
       <li>Optional global leaderboards (Weekly and All-Time) with a safe, predefined name selection system</li>
       <li>Advertisements delivered via Google AdMob</li>
     </ul>
-    <p style="margin-top: 10px;">Stack It! is part of a growing portfolio of games developed by FunMindo. These Terms apply solely to Stack It! and do not govern any other FunMindo title unless expressly stated.</p>
+    <p style="margin-top:10px;">Stack It! is part of a growing portfolio of games developed by FunMindo. These Terms apply solely to Stack It! and do not govern any other FunMindo title unless expressly stated.</p>
   </div>
 
-  <!-- 3. Licence -->
+  <!-- 3 -->
   <div class="section" id="s3">
-    <div class="section-header">
-      <div class="section-num">3</div>
-      <h2>Licence to Use</h2>
-    </div>
+    <div class="section-header"><div class="section-num">3</div><h2>Licence to Use</h2></div>
     <p>Subject to your compliance with these Terms, FunMindo grants you a <strong>limited, non-exclusive, non-transferable, revocable licence</strong> to download and play Stack It! on your personal Android device solely for your own personal, non-commercial entertainment purposes.</p>
     <p>This licence does not include any right to:</p>
     <ul class="pp-list">
@@ -563,12 +410,9 @@
     <p style="margin-top:10px;">Any rights not expressly granted in these Terms are reserved by FunMindo.</p>
   </div>
 
-  <!-- 4. User Conduct -->
+  <!-- 4 -->
   <div class="section" id="s4">
-    <div class="section-header">
-      <div class="section-num">4</div>
-      <h2>User Conduct</h2>
-    </div>
+    <div class="section-header"><div class="section-num">4</div><h2>User Conduct</h2></div>
     <p>You agree to use Stack It! only for lawful purposes and in a manner that does not infringe the rights of others. The following rules apply to all features of the Game, including leaderboards and display names.</p>
     <div class="rule-grid">
       <div class="rule-box do">
@@ -595,53 +439,27 @@
     <p style="margin-top:14px;">FunMindo reserves the right to remove any display name and/or leaderboard entry that violates these rules, without prior notice.</p>
   </div>
 
-  <!-- 5. In-Game Currencies & Virtual Items -->
+  <!-- 5 -->
   <div class="section" id="s5">
-    <div class="section-header">
-      <div class="section-num">5</div>
-      <h2>In-Game Currencies &amp; Virtual Items</h2>
-    </div>
+    <div class="section-header"><div class="section-num">5</div><h2>In-Game Currencies &amp; Virtual Items</h2></div>
     <p>Stack It! features <strong>three in-game currencies</strong> — Coins, Diamonds, and Crowns. All currencies are virtual, exist solely within the Game, and carry no real-world monetary value.</p>
-
     <h3>The Three Currencies</h3>
-    <table class="data-table" style="margin-top:8px;">
-      <thead>
-        <tr>
-          <th>Currency</th>
-          <th>Symbol</th>
-          <th>How to Earn</th>
-          <th>Used For</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Coins</strong></td>
-          <td style="font-size:18px;">🪙</td>
-          <td>Gameplay rewards &amp; optional rewarded ads</td>
-          <td>Unlock block skins</td>
-        </tr>
-        <tr>
-          <td><strong>Diamonds</strong></td>
-          <td style="font-size:18px;">💎</td>
-          <td>Gameplay rewards &amp; optional rewarded ads</td>
-          <td>Unlock block skins</td>
-        </tr>
-        <tr>
-          <td><strong>Crowns</strong></td>
-          <td style="font-size:18px;">👑</td>
-          <td>Gameplay rewards &amp; optional rewarded ads</td>
-          <td>Unlock block skins</td>
-        </tr>
-      </tbody>
-    </table>
-
+    <div class="table-scroll">
+      <table class="data-table">
+        <thead>
+          <tr><th>Currency</th><th>Symbol</th><th>How to Earn</th><th>Used For</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Coins</strong></td><td style="font-size:18px;">🪙</td><td>Gameplay rewards &amp; optional rewarded ads</td><td>Unlock block skins</td></tr>
+          <tr><td><strong>Diamonds</strong></td><td style="font-size:18px;">💎</td><td>Gameplay rewards &amp; optional rewarded ads</td><td>Unlock block skins</td></tr>
+          <tr><td><strong>Crowns</strong></td><td style="font-size:18px;">👑</td><td>Gameplay rewards &amp; optional rewarded ads</td><td>Unlock block skins</td></tr>
+        </tbody>
+      </table>
+    </div>
     <div class="coin-box" style="margin-top:14px;">
       <span class="coin-box-icon">🛡️</span>
-      <span>
-        <strong>No real-money purchases.</strong> Stack It! does not offer any in-app purchases. All three currencies are earned exclusively through gameplay and by voluntarily watching rewarded advertisements. No payment is ever required to earn, use, or unlock anything in the Game.
-      </span>
+      <span><strong>No real-money purchases.</strong> Stack It! does not offer any in-app purchases. All three currencies are earned exclusively through gameplay and by voluntarily watching rewarded advertisements. No payment is ever required to earn, use, or unlock anything in the Game.</span>
     </div>
-
     <h3>Virtual Currency Rules</h3>
     <ul class="pp-list">
       <li>All currencies (Coins, Diamonds, Crowns) hold no real-world monetary value and cannot be exchanged for cash, goods, or real-world services</li>
@@ -653,14 +471,10 @@
     </ul>
   </div>
 
-  <!-- 6. Leaderboard & Name System -->
+  <!-- 6 -->
   <div class="section" id="s6">
-    <div class="section-header">
-      <div class="section-num">6</div>
-      <h2>Leaderboard &amp; Player Name System</h2>
-    </div>
+    <div class="section-header"><div class="section-num">6</div><h2>Leaderboard &amp; Player Name System</h2></div>
     <p>Stack It! offers optional global leaderboards (Weekly and All-Time) powered by Unity Gaming Services. Participation in leaderboards is entirely voluntary.</p>
-
     <h3>How the Name System Works</h3>
     <p>Stack It! uses a <strong>safe, predefined name system</strong> specifically designed for our 3+ audience. Here is how it works:</p>
     <ul class="pp-list">
@@ -670,14 +484,10 @@
       <li>Once you tap <strong>Save</strong>, your name is locked in permanently — it <strong>cannot be changed</strong> after saving</li>
       <li>Your saved name will then appear next to your score on the leaderboard</li>
     </ul>
-
     <div class="coin-box" style="background: rgba(91,124,247,0.07); border-color: rgba(91,124,247,0.25); color: var(--accent2);">
       <span class="coin-box-icon">🛡️</span>
-      <span>
-        <strong>Child-safe by design.</strong> Because all names are predefined and curated by FunMindo, no player (including young children) can enter offensive, personal, or inappropriate names. This system protects all players on the leaderboard.
-      </span>
+      <span><strong>Child-safe by design.</strong> Because all names are predefined and curated by FunMindo, no player (including young children) can enter offensive, personal, or inappropriate names. This system protects all players on the leaderboard.</span>
     </div>
-
     <h3>Leaderboard Integrity</h3>
     <ul class="pp-list">
       <li>Only scores achieved through normal, legitimate gameplay will be accepted</li>
@@ -686,21 +496,18 @@
       <li>FunMindo does not guarantee leaderboard availability at all times — the service may be temporarily unavailable due to maintenance or technical issues</li>
       <li>Weekly leaderboards reset on a regular schedule; historical weekly scores may not be retained</li>
     </ul>
-
     <p style="margin-top:10px;">To request removal of your leaderboard entry and associated player data, contact us at <a class="inline-link" href="mailto:funmindostudio@gmail.com">funmindostudio@gmail.com</a>.</p>
   </div>
 
-  <!-- 7. Advertisements -->
+  <!-- 7 -->
   <div class="section" id="s7">
-    <div class="section-header">
-      <div class="section-num">7</div>
-      <h2>Advertisements</h2>
-    </div>
+    <div class="section-header"><div class="section-num">7</div><h2>Advertisements</h2></div>
     <p>Stack It! is a free-to-play game supported by advertisements delivered by <strong>Google AdMob</strong>. By using the Game, you acknowledge and agree that:</p>
     <ul class="pp-list">
       <li>Advertisements are an integral part of the free-to-play experience</li>
       <li>Ads may appear at natural breakpoints in gameplay (e.g. between rounds)</li>
-      <li>Rewarded video ads are always optional — you choose whether to watch them in exchange for coins</li>
+      <!-- FIX 6: Changed "coins" to "in-game currencies (Coins, Diamonds, or Crowns)" -->
+      <li>Rewarded video ads are always optional — you choose whether to watch them in exchange for in-game currencies (Coins, Diamonds, or Crowns)</li>
       <li>AdMob may use your device's advertising ID to serve relevant ads (see Section 13 – Privacy Policy)</li>
       <li>All advertisements served are configured for a <strong>general audience (3+)</strong> — no age-inappropriate or adult ads will be served</li>
     </ul>
@@ -708,23 +515,17 @@
     <p>To opt out of personalised advertisements, refer to your device's Google Settings → Ads (see our Privacy Policy for instructions).</p>
   </div>
 
-  <!-- 8. IP -->
+  <!-- 8 -->
   <div class="section" id="s8">
-    <div class="section-header">
-      <div class="section-num">8</div>
-      <h2>Intellectual Property</h2>
-    </div>
+    <div class="section-header"><div class="section-num">8</div><h2>Intellectual Property</h2></div>
     <p>All content within Stack It!, including but not limited to the game engine, graphics, artwork, sound effects, music, animations, user interface elements, game mechanics, code, and the FunMindo name and logo, are the exclusive intellectual property of <strong>FunMindo</strong> or its licensors, and are protected under applicable Indian and international intellectual property laws.</p>
     <p>You may not reproduce, distribute, publish, publicly display, or create derivative works from any content within the Game without the prior written consent of FunMindo.</p>
     <p>Your leaderboard display name remains your own content. By submitting it, you grant FunMindo a worldwide, royalty-free licence to display it on the in-game leaderboard and in any related promotional materials for the Game.</p>
   </div>
 
-  <!-- 9. Disclaimer -->
+  <!-- 9 -->
   <div class="section" id="s9">
-    <div class="section-header">
-      <div class="section-num">9</div>
-      <h2>Disclaimer of Warranties</h2>
-    </div>
+    <div class="section-header"><div class="section-num">9</div><h2>Disclaimer of Warranties</h2></div>
     <p>Stack It! is provided on an <strong>"as is" and "as available"</strong> basis, without warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
     <ul class="pp-list">
       <li>FunMindo does not warrant that the Game will be uninterrupted, error-free, or free of viruses or harmful components</li>
@@ -734,12 +535,9 @@
     </ul>
   </div>
 
-  <!-- 10. Liability -->
+  <!-- 10 -->
   <div class="section" id="s10">
-    <div class="section-header">
-      <div class="section-num">10</div>
-      <h2>Limitation of Liability</h2>
-    </div>
+    <div class="section-header"><div class="section-num">10</div><h2>Limitation of Liability</h2></div>
     <p>To the fullest extent permitted by applicable law, <strong>FunMindo shall not be liable</strong> for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of, or inability to use, Stack It!, including but not limited to:</p>
     <ul class="pp-list">
       <li>Loss of in-game currencies (Coins, Diamonds, Crowns) or unlocked skins due to device failure or uninstallation</li>
@@ -750,34 +548,25 @@
     <p style="margin-top:10px;">FunMindo's total liability to you for any claim arising from these Terms or the Game shall not exceed <strong>INR 0</strong> (zero), as the Game is provided entirely free of charge with no monetary transactions.</p>
   </div>
 
-  <!-- 11. Termination -->
+  <!-- 11 -->
   <div class="section" id="s11">
-    <div class="section-header">
-      <div class="section-num">11</div>
-      <h2>Termination</h2>
-    </div>
+    <div class="section-header"><div class="section-num">11</div><h2>Termination</h2></div>
     <p>FunMindo reserves the right to suspend, restrict, or terminate your access to features of Stack It! (such as the leaderboard) at any time and without prior notice, if FunMindo determines, in its sole discretion, that you have violated these Terms.</p>
     <p>You may terminate this agreement at any time by uninstalling Stack It! from your device. Upon uninstallation, all locally stored data (including coins and game progress) will be deleted from your device. Leaderboard data stored on Unity Gaming Services servers may be retained until deletion is requested.</p>
     <p>Sections 8 (Intellectual Property), 9 (Disclaimer of Warranties), 10 (Limitation of Liability), and 14 (Governing Law) shall survive any termination of this agreement.</p>
   </div>
 
-  <!-- 12. Changes -->
+  <!-- 12 -->
   <div class="section" id="s12">
-    <div class="section-header">
-      <div class="section-num">12</div>
-      <h2>Changes to These Terms</h2>
-    </div>
+    <div class="section-header"><div class="section-num">12</div><h2>Changes to These Terms</h2></div>
     <p>FunMindo may revise these Terms from time to time. All changes will be posted on this page with a revised "Last Updated" date. We encourage you to review these Terms periodically.</p>
     <p>For significant changes, we will make reasonable efforts to notify users through an in-game notice or a Play Store update description. Your continued use of the Game after the effective date of any revision constitutes your acceptance of the updated Terms.</p>
     <p>If you do not agree with any updated Terms, you must stop using the Game and uninstall it from your device.</p>
   </div>
 
-  <!-- 13. Privacy Policy -->
+  <!-- 13 -->
   <div class="section" id="s13">
-    <div class="section-header">
-      <div class="section-num">13</div>
-      <h2>Privacy Policy</h2>
-    </div>
+    <div class="section-header"><div class="section-num">13</div><h2>Privacy Policy</h2></div>
     <p>Your privacy is important to us. Our Privacy Policy explains how we collect, use, and protect your information when you use Stack It!. The Privacy Policy is incorporated by reference into these Terms and forms part of this agreement.</p>
     <p>Key privacy points relevant to these Terms:</p>
     <ul class="pp-list">
@@ -786,39 +575,33 @@
       <li>All in-game currency balances (Coins, Diamonds, Crowns) are stored locally on your device only</li>
       <li>Advertisements are served by Google AdMob, which may use your device Advertising ID</li>
     </ul>
-    <a class="policy-link-card" href="https://funmindo.github.io/stack-it-privacy/" target="_blank">
+    <!-- FIX 1: Corrected Privacy Policy URL from stack-it-privacy to funmindo-privacy -->
+    <a class="policy-link-card" href="https://funmindo.github.io/funmindo-privacy/" target="_blank">
       <span class="policy-link-card-icon">🔒</span>
       <div class="policy-link-card-text">
         <div class="label">Privacy Policy – Stack It! by FunMindo</div>
-        <div class="sub">funmindo.github.io/stack-it-privacy/ &nbsp;→</div>
+        <div class="sub">funmindo.github.io/funmindo-privacy/ &nbsp;→</div>
       </div>
     </a>
   </div>
 
-  <!-- 14. Governing Law -->
+  <!-- 14 -->
   <div class="section" id="s14">
-    <div class="section-header">
-      <div class="section-num">14</div>
-      <h2>Governing Law &amp; Disputes</h2>
-    </div>
+    <div class="section-header"><div class="section-num">14</div><h2>Governing Law &amp; Disputes</h2></div>
     <p>These Terms of Use are governed by and construed in accordance with the laws of <strong>India</strong>, including the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023 (DPDPA).</p>
     <p>Any dispute, controversy, or claim arising out of or in connection with these Terms, or the breach, termination, or invalidity thereof, shall be subject to the exclusive jurisdiction of the competent courts in India.</p>
     <p>If any provision of these Terms is found by a court of competent jurisdiction to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.</p>
   </div>
 
-  <!-- 15. Contact -->
+  <!-- 15 -->
   <div class="section" id="s15">
-    <div class="section-header">
-      <div class="section-num">15</div>
-      <h2>Contact Us</h2>
-    </div>
+    <div class="section-header"><div class="section-num">15</div><h2>Contact Us</h2></div>
     <p>If you have any questions, concerns, or requests regarding these Terms, your data, or any aspect of Stack It!, please reach out to us. We aim to respond to all enquiries within <strong>30 days</strong>.</p>
-    <div class="contact-card" style="margin-top: 0;">
+    <div class="contact-card" style="margin-top:12px;">
       <div class="contact-icon">✉️</div>
       <div class="contact-text">
         <h3>Contact FunMindo</h3>
-        <p>
-          Developer: <strong style="color: var(--accent2);">FunMindo</strong><br/>
+        <p>Developer: <strong style="color: var(--accent2);">FunMindo</strong><br/>
           Email: <a href="mailto:funmindostudio@gmail.com">funmindostudio@gmail.com</a><br/>
           Response time: Within 30 days
         </p>
@@ -830,12 +613,14 @@
   <footer class="footer">
     <p>© 2026 <strong>FunMindo</strong>. All rights reserved.</p>
     <p>Stack It! &nbsp;·&nbsp; Version 1.0 &nbsp;·&nbsp; Terms of Use v1.0</p>
+    <!-- FIX 1: Corrected footer Privacy Policy link from stack-it-privacy to funmindo-privacy -->
     <p style="margin-top:8px;">
-      <a class="inline-link" href="https://funmindo.github.io/stack-it-privacy/" target="_blank">Privacy Policy</a>
+      <a class="inline-link" href="https://funmindo.github.io/funmindo-privacy/" target="_blank">Privacy Policy</a>
       &nbsp;·&nbsp; Governed by the laws of India
     </p>
+    <!-- FIX 4: Footer review date updated to April 25 -->
     <p style="margin-top:8px; font-size:11.5px; color:#4a5578;">
-      This document was last reviewed on April 23, 2026.
+      This document was last reviewed on April 25, 2026.
     </p>
   </footer>
 
